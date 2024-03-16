@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Layout</title>
+    <style>
+        body{
+            margin: 20px;
+            padding: 10px;
+        }
+        .container{
+            column-count :3;
+            text-align: justify;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+        }
+        .column p:first-of-type::first-letter{
+            font-size: 5em;
+            float: left;
+            line-height: 50%;
+            margin: 0.1em 0.1em 0.1em -0.05em;
+        }
+        .column img{
+            margin: -20px;
+            padding: 2%;
+            display: inline;
+            border: 2px solid black;
+            height: auto;
+            width: 100%;
+        }
+        .container h1{
+            column-span:all;
+            margin-top: 0;
+            margin-bottom: 70px;
+            text-align: center;
+            font-size: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><u>Simpson's Newspaper</u></h1>
+        <div class="column">
+            <img src="../HTML/images/simpson.jpg" alt="Image 1" width="200">
+            <h2>Headline 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quasi repellendus obcaecati numquam
+                tempora sapiente molestias! Accusantium neque tempora tenetur veniam, quod voluptas sequi molestiae
+                voluptatibus qui atque aliquid beatae maiores dolorum itaque fugiat. Sint recusandae, eligendi neque,
+                culpa quia pariatur hic eos cumque itaque optio deleniti nemo atque est.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, maxime architecto? Fuga natus quaerat alias esse omnis nostrum cupiditate officia impedit provident recusandae praesentium quam soluta ea quidem nulla ipsam veritatis sed adipisci distinctio temporibus, modi eum at? Nesciunt aperiam quas officia, ex totam minus provident dolor voluptatibus quam ullam sapiente tempora minima voluptate nisi quos quidem ea fugit eligendi possimus, architecto dolorum excepturi rerum. Mollitia omnis sequi deserunt tenetur provident similique autem eius saepe vel corporis porro ab repellat at et eum quae possimus nobis, culpa sapiente nulla quisquam laboriosam dolores officia ratione? Beatae hic blanditiis quod tempore veritatis?
+            </p>
+        </div>
+
+        <div class="column">
+            <h2>Headline 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui inventore voluptatum repellat! Autem,
+                dignissimos minus velit, iste distinctio in iure totam illum sed dolor quia officia libero dolorem id
+                nulla fuga et. Est ipsam quo quae voluptate ratione! Hic, molestias?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aperiam nihil adipisci labore? Quibusdam repudiandae a expedita at. Sequi dolores molestias tempora tempore, officiis ipsum, nobis veniam doloribus doloremque, neque quae atque modi minima laboriosam maiores qui suscipit excepturi. Debitis quia architecto non accusantium distinctio neque maxime doloremque. Dicta ipsum facilis possimus, molestias facere pariatur a ex debitis fugiat dolorem necessitatibus ad tempore sint modi deleniti praesentium voluptatibus, repellat alias veniam. Voluptatem recusandae quas, aperiam repellendus perspiciatis, aut exercitationem voluptate nulla consequatur, minima magnam tempore corrupti voluptatibus voluptates provident id esse quidem impedit sapiente dolorum molestias neque illo optio? Minima, exercitationem nesciunt eos ipsam debitis molestiae magnam mollitia laborum maiores beatae at est totam culpa quo. Ea possimus nulla est quisquam deleniti officiis placeat porro? Cum dicta quod optio nihil aperiam accusantium quas vitae nesciunt voluptas laborum labore iure non, totam repellendus ex laudantium quaerat culpa numquam sequi quos! Illo nisi laborum, amet eum quisquam, culpa eaque officia autem facere cum suscipit esse qui, perferendis beatae repudiandae nihil! Temporibus accusamus beatae id magni? Molestias porro temporibus, voluptatem placeat laudantium autem. Aut tempora ratione placeat magnam quis expedita atque ad unde nobis? Laborum fugit sed omnis error aut sunt vitae quos!
+        </p>
+        </div>
+    </div>
+</body>
+
+</html>
