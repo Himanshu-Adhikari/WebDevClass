@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Effect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            align-items: center;
+        }
+
+        .ele {
+            display: flex;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            transition: background-color 1s ease-in-out;
+            cursor: pointer;
+        }
+
+        #b1 {
+            background-color: rgb(158, 233, 232);
+
+            &:hover {
+                background-color: rgb(113, 65, 234);
+            }
+        }
+
+        #b2 {
+            background-color: rgb(158, 158, 233);
+
+            &:hover {
+                background-color: rgb(241, 150, 150);
+            }
+        }
+
+        #b3 {
+            background-color: rgb(158, 233, 207);
+
+            &:hover {
+                background-color: rgb(253, 205, 137);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 >Transition Effect Demo</h1>
+    <div class="ele">
+        <div class="box" id="b1"></div>
+        <div class="box" id="b2"></div>
+        <div class="box" id="b3"></div>
+    </div>
+    <p>Hover over the boxes to see the transition effect.</p>
+</body>
+
+</html>
