@@ -20,13 +20,37 @@
         div{
             text-align: center;
             a{
-                &
+                cursor:pointer;
+                &:active{
+                    color: aqua;
+                }
+                &:hover{
+                    color: rgb(44, 228, 102);
+                }
+                &:visited{
+                    color:crimson
+                }
             }
         }
         .content{
+            margin-top:20px;
+            margin-bottom:20px;
             font-family: cursive;
             background-color: rgb(6, 6, 139);
             color: yellow;
+        }
+        .layer{
+            p{
+                text-decoration: underline;
+            }
+            p:nth-child(odd){
+                color: blue;
+            }
+            p:nth-child(even){
+                font-size: 2rem;
+                transform: translateY(-50px);
+                color:red;
+            }
         }
     </style>
 </head>
@@ -38,8 +62,20 @@
         <a href="#" style="display: block; margin-left: auto; margin-right: auto;">Register</a>
         
     </div>
-
-    
+    <div class="layer">
+        <p>
+            LAYER1
+        </p>
+        <p>
+            LAYER2
+        </p>
+        <p>
+            LAYER1
+        </p>
+        <p>
+            LAYER2
+        </p>
+    </div>
     
 </body>
 </html>
