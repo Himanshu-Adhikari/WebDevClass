@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Self-Modifying Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>This page will modify itself every minute!</h1>
+  <div id="content">
+    <p>The current time is: <span id="time"></span></p>
+  </div>
+  <script>
+    let k = 1;
+    var aux = {1: "red", 2: "blue", 3: "yellow", 4: "purple", 5: "pink"};
+    let cnt = 0;
+    function updateTime() {
+        k++;
+        document.body.style.backgroundColor = aux[k % 6];
+    }
+    function upd() {
+        cnt++;
+        var hours = Math.floor(cnt / 3600);
+        var minutes = Math.floor((cnt % 3600) / 60);
+        var seconds = cnt % 60;
+        document.getElementById('time').textContent = hours + " hours " + minutes + " minutes " + seconds + ' seconds';
+    }
+    setInterval(upd, 1000);
+    setInterval(updateTime, 2000);
+    updateTime();
+  </script>
+</body>
+</html>

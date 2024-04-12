@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="Tele">Enter Telephone Number (like (555)555-5555) :</label>
+    <input type="text" id="Tele">
+    <button onclick="return rec()">Split Phone Number</button>
+    <p id="ACode">Area Code: </p>
+    <p id="PhoneNo">Phone No.: </p>
+    <script>
+        function rec(){
+            var l = document.getElementById("Tele").value;
+            if(/\([0-9]{3}\)[0-9]{3}-[0-9]{4}$/.test(l) == false){
+                alert("Input Error. Please enter the phone number in the format (555)555-5555");
+                return false;
+            } else {
+                var areaCode = document.getElementById("ACode");
+                areaCode.innerHTML += l.substring(1, 4);
+                var phoneNumber = document.getElementById("PhoneNo");
+                phoneNumber.innerHTML += l.substring(5,8)+l.substring(9,13); 
+            }
+        }
+    </script>
+</body>
+</html>
